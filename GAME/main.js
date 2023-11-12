@@ -65,4 +65,48 @@ for(const key in scenes){
     scene(key, scenes[key])
 }
 
-go("menu");
+    player.enablePassthrough()
+    player.enableCoinPickUp()
+    player.enableMobVunerability()
+
+const spiders = new Spiders(
+    level1Config.spiderPositions.map((spiderPos) => spiderPos()),
+    level1Config.spiderAmplitudes,
+    level1Config.spiderSpeeds,
+    level1Config.spiderType
+  )
+  spiders.setMovementPattern()
+  spiders.enablePassthrough()
+
+  const fish = new Projectiles(
+    level1Config.fishPositions,
+    level1Config.fishRanges,
+    "fish"
+  )
+  fish.setMovementPattern()
+  
+  loadSprite("fish", "./assets/Fish_1.png", {
+    sliceX: 2,
+    sliceY: 1,
+    anims: {
+      swim: { from: 0, to: 1, loop: true },
+    },
+  })
+
+  const flames = new Projectiles(
+    level2Config.flamePositions.map((flamePos) => flamePos()),
+    level2Config.flameAmplitudes,
+    level2Config.flameType
+  )
+  flames.setMovementPattern()
+
+  loadSprite("flame", "./assets/Flame_1.png", {
+    sliceX: 2,
+    sliceY: 1,
+    anims: {
+      burn: { from: 0, to: 1, loop: true },
+    },
+  })
+
+  go("menu");
+

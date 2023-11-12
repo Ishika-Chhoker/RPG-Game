@@ -79,3 +79,116 @@ export const load = {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loadSprite("axe", "./assets/Axe_Trap.png")
+
+
+sounds: () => {
+  loadSound("jump", "./sounds/jump.wav")
+  loadSound("coin", "./sounds/coin.wav")
+  loadSound("water-ambience", "./sounds/water-ambience.mp3")
+  loadSound("spider-attack", "./sounds/spider-attack.mp3")
+  loadSound("hit", "./sounds/hit.wav")
+  loadSound("lava-ambience", "./sounds/lava.wav")
+  loadSound("confirm-ui", "./sounds/confirm-ui.wav")
+  loadSound("swinging-axe", "./sounds/swinging-axe.mp3")
+  loadSound("saw", "./sounds/saw.wav")
+  loadSound("fireball", "./sounds/fireball.wav")
+  loadSound("strong-wind", "./sounds/strong-wind.wav")
+  loadSound("dive", "./sounds/dive.wav")
+},
+}
