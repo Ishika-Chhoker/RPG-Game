@@ -1,3 +1,4 @@
+
 export const level1Config = {
     gravity: 1400,
     playerSpeed: 400,
@@ -25,3 +26,13 @@ export const level1Config = {
     spiderSpeeds: [2, 1, 1, 2],
     spiderType: 1,
   }
+
+export const level1Config ={
+    gravity: 1400,
+    playerSpeed: 400,
+    jumpForce:650,
+    nbLives: 3,
+    playerStartPosX: 1500,
+    playerStartPosY:100
+}
+
